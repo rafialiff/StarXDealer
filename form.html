@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Uas Desproweb</title>
+</head>
+
+<style>
+  .square-img {
+    width: 80%;
+    padding-bottom: 80%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .square-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+
+  <body style="background-color: #464ee8;">
+    <header class="jumbotron jumbotron-fluid text-center"style="background-image: url(https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);">
+      <div class="container">
+      <h1 class="display-4">STAR X DEALER</h1>
+      <p class="lead">Welcome to our website!</p>
+      </div>
+    </header>
+
+    <div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h2>Form Pembelian Mobil</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Nama Lengkap:</label>
+          <input type="text" class="form-control" id="name" placeholder="Masukkan Nama Lengkap" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Masukkan Email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Nomor Telepon:</label>
+          <input type="text" class="form-control" id="phone" placeholder="Masukkan Nomor Telepon" required>
+        </div>
+        <div class="form-group">
+          <label for="alamat">Alamat:</label>
+          <input type="text" class="form-control" id="alamat" placeholder="Masukkan Alamat" required>
+        </div>
+        <div class="form-group">
+          <label for="alamat">Jumlah Beli:</label>
+          <input type="number" class="form-control" id="jumlahBeli" placeholder="0" required>
+        </div>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Kirim
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Pembelian Sukses</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Pesanan Mobil Anda Akan Segera Dikirimkan. Terima Kasih Telah Membeli Produk Kami.
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a href="uas_desproweb.html"><button type="button" class="btn btn-success">Home</button></a>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+     </div>
+    </div>
+    <br>
+    <br>
+    </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
